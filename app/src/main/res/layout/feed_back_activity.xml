@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/feed_back_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteColor"
+    tools:context="com.tradesman.provider.FeedBackActivity">
+
+    <include layout="@layout/custom_tool_bar" />
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_screen"
+                android:layout_marginLeft="@dimen/margin_screen"
+                android:layout_marginRight="@dimen/margin_screen"
+                android:layout_marginBottom="@dimen/margin_screen"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgfeedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/default_icon"/>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/avilable_job_margin_10"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <com.tradesman.provider.component.MyFontRaidProBoldTextView
+                        android:textSize="@dimen/job_title"
+                        android:textAllCaps="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtJobTitlefeedback" />
+                    <com.tradesman.provider.component.MyFontOpenRegTextView
+                        android:layout_marginTop="2dp"
+                        android:textSize="@dimen/available_job_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_second_title"
+                        android:id="@+id/txtjobTypefeedback" />
+                    <com.tradesman.provider.component.MyFontOpenRegTextView
+                        android:textSize="@dimen/job_time"
+                        android:layout_marginTop="@dimen/margin_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_second_title"
+                        android:id="@+id/txtJobTimefeedback"/>
+
+                    <com.tradesman.provider.component.MyFontOpenRegTextView
+                        android:layout_marginTop="@dimen/margin_2"
+                        android:textColor="@color/color_decsriptipn"
+                        android:textSize="@dimen/job_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtJobDescriptipnfeedback" />
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/avilable_job_margin_10"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.tradesman.provider.component.MyFontRaidProRegTextView
+                        android:id="@+id/txtJobMilesNumberfeedback"
+                        android:textSize="@dimen/miles_digit_avilable_job"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_black_shade_5c" />
+
+                    <com.tradesman.provider.component.MyFontRaidProRegTextView
+                        android:textSize="@dimen/miles_in_text"
+                        android:gravity="right"
+                        android:textColor="@color/color_black_shade_activejob"
+                        android:id="@+id/txtjobMilesfeedback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/miles_away"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:background="@drawable/shado"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"/>
+
+            <LinearLayout
+                android:id="@+id/layoutJobComplete"
+                android:padding="@dimen/avilable_job_margin_10"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.tradesman.provider.component.MyFontRaidProRegTextView
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/job_completed"
+                    android:text="@string/job_completed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.tradesman.provider.component.MyFontRaidProRegTextView
+                    android:textColor="@color/color_second_title"
+                    android:textSize="17sp"
+                    android:text="@string/rate_your_customer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewJobcomplete"
+                android:background="@drawable/shado"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"/>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/margin_screen"
+                android:layout_marginRight="@dimen/margin_screen"
+                android:layout_marginTop="@dimen/avilable_job_margin_10"
+                android:layout_marginBottom="@dimen/avilable_job_margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgUserPhotofeedback"
+                    android:layout_width="@dimen/user_image_size"
+                    android:layout_height="@dimen/user_image_size"
+                    android:src="@drawable/default_icon"/>
+
+
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/avilable_job_margin_10"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.tradesman.provider.component.MyFontOpenRegTextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/color_ligt_black"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/avilable_job_user_name"
+                        android:id="@+id/txtUserNamefeedback"/>
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/feedBackrating"
+                        android:id="@+id/ratingfeedback" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:background="@drawable/shado"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"/>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/avilable_job_margin_10"
+                android:orientation="horizontal"
+                android:id="@+id/layoutFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:paddingLeft="@dimen/avilablejob_padding_20"
+                    android:src="@drawable/feedback_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.tradesman.provider.component.MyFontOpenRegEditText
+                    android:scrollbarStyle="insideOverlay"
+                    android:gravity="start"
+                    android:lines="5"
+                    android:id="@+id/edtFeedback"
+                    android:background="@color/whiteColor"
+                    android:layout_marginLeft="@dimen/avilable_job_margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.tradesman.provider.component.MyriadProRegButton
+        android:layout_marginTop="@dimen/avilable_job_margin_10"
+        android:padding="@dimen/avilable_job_margin_10"
+        android:textSize="@dimen/provide_quote_button_size"
+        android:text="@string/provider_quote_submit"
+        android:layout_marginLeft="@dimen/margin_screen"
+        android:layout_marginRight="@dimen/margin_screen"
+        android:layout_marginBottom="@dimen/avilable_job_margin_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnfeedback"
+        style="@style/button"/>
+
+</LinearLayout>

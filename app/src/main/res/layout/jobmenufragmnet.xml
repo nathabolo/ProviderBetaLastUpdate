@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="fill_parent"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Profile" />
+
+    <Button
+        android:id="@+id/viewQoats"
+        android:layout_width="fill_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile"
+        android:layout_marginTop="36dp"
+        android:text="View Quotes"
+        android:layout_alignLeft="@+id/profile"
+        android:layout_alignStart="@+id/profile"
+        android:layout_alignRight="@+id/profile"
+        android:layout_alignEnd="@+id/profile" />
+
+    <Button
+        android:id="@+id/btntypes"
+        android:layout_width="fill_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="Job Categories"
+        android:layout_below="@+id/viewQoats"
+        android:layout_alignLeft="@+id/viewQoats"
+        android:layout_alignStart="@+id/viewQoats"
+        android:layout_alignRight="@+id/viewQoats"
+        android:layout_alignEnd="@+id/viewQoats" />
+</RelativeLayout>

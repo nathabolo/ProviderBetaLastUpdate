@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tradesman.provider.ProfileActivity">
+
+    <include
+        layout="@layout/custom_tool_bar"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@mipmap/top_back"
+        android:layout_height="@dimen/update_profile_header_height">
+        <LinearLayout
+            android:id="@+id/profileUpdateHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/update_profile_header_height"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="@dimen/profile_update_circular_image_width"
+                android:layout_height="@dimen/profile_update_circular_image_width"
+                android:layout_marginBottom="@dimen/marging_bottom_10dp"
+                android:src="@drawable/default_icon"
+                android:id="@+id/imgProfile" />
+
+
+            <com.tradesman.provider.component.MyFontRaidProBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/profile_update_name_size"
+                android:textStyle="bold"
+                android:id="@+id/txtprofileUser" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/available_service_text_size"
+                android:id="@+id/txtprofileService" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:gravity="center"
+            android:textSize="@dimen/profile_btn_size"
+            android:textAllCaps="false"
+            android:text="@string/statistics"
+            android:textColor="@color/whiteColor"
+            android:background="@color/color_green_dark"
+            android:layout_weight="1"
+            android:layout_width="@dimen/margin_30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnprofileSta" />
+
+        <Button
+            android:gravity="center"
+            android:textSize="@dimen/profile_btn_size"
+            android:text="@string/profile_edit"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteColor"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_width="@dimen/margin_30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnProfileEdit" />
+
+    </LinearLayout>
+
+    <ScrollView
+
+        android:id="@+id/layoutstatistics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:padding="@dimen/profile_padding"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <com.tradesman.provider.component.MyFontRaidProBoldTextView
+                        android:textSize="@dimen/profile_title_text"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginLeft="@dimen/profile_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Member Since"/>
+
+                    <TextView
+                        android:textColor="@color/color_black_shade"
+                        android:textSize="@dimen/profile_text_20"
+                        android:layout_marginLeft="@dimen/profile_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtprofileDate" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/colorAccent"
+                        android:id="@+id/txtprofileupcoming"
+                        android:textSize="@dimen/profile_text_38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/color_black_shade"
+                        android:layout_marginLeft="@dimen/profile_margin_2"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/txtprofileupcoming"
+                        android:textSize="@dimen/profile_text_13"
+                        android:text="@string/upcoming_appoi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:background="@drawable/shado"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"/>
+
+            <LinearLayout
+                android:padding="@dimen/profile_padding"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <com.tradesman.provider.component.MyFontRaidProBoldTextView
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/profile_title_text"
+                        android:layout_marginLeft="@dimen/profile_margin"
+                        android:text="@string/this_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="@dimen/profile_text_25"
+                        android:layout_marginLeft="@dimen/profile_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtprofileThisweek" />
+                    <TextView
+                        android:textColor="@color/color_black_shade"
+                        android:textSize="@dimen/profile_text_18"
+                        android:layout_marginLeft="@dimen/profile_margin"
+                        android:text="@string/appointments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textSize="@dimen/profile_text_25"
+                        android:layout_marginLeft="@dimen/profile_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtprofileweekrate" />
+                    <TextView
+
+                        android:textColor="@color/color_black_shade"
+                        android:textSize="@dimen/profile_title_text"
+                        android:layout_marginLeft="@dimen/profile_margin"
+                        android:text="@string/earning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <com.tradesman.provider.component.MyFontRaidProBoldTextView
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/profile_title_text"
+                        android:layout_marginLeft="@dimen/profile_margin_10"
+                        android:text="@string/this_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="@dimen/profile_text_25"
+                        android:layout_marginLeft="@dimen/profile_margin_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtprofileThisYear" />
+                    <TextView
+                        android:textColor="@color/color_black_shade"
+                        android:textSize="@dimen/profile_text_18"
+                        android:layout_marginLeft="@dimen/profile_margin_10"
+                        android:text="@string/appointments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textSize="@dimen/profile_text_25"
+                        android:layout_marginLeft="@dimen/profile_margin_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtprofileyearrate" />
+                    <TextView
+                        android:textColor="@color/color_black_shade"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="@dimen/profile_margin_10"
+                        android:text="@string/earning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:background="@drawable/shado"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"/>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginLeft="@dimen/profile_text_30"
+                        android:textSize="@dimen/profile_text_30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtprofiletotalappointments" />
+                    
+                    <TextView
+                        android:textColor="@color/color_black_shade"
+                        android:layout_marginLeft="@dimen/profile_text_30"
+                        android:textSize="@dimen/profile_text_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/appointments"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/profile_margin_10"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/profile_text_30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtProfileTotalEarning" />
+                        <TextView
+                            android:layout_marginLeft="@dimen/profile_margin_10"
+                            android:textColor="@color/color_black_shade"
+                            android:textSize="@dimen/profile_text_18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/earning"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <LinearLayout
+
+        android:id="@+id/layoutProfile"
+        android:padding="@dimen/content_padding"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.tradesman.provider.component.MyFontOpenRegEditText
+                    android:id="@+id/edtUpdateUserName"
+                    android:enabled="false"
+                    style="@style/editTextBox"
+                    android:drawableLeft="@drawable/profile_icon"
+                    android:hint="@string/name_hint"
+                    android:inputType="text"
+                    android:textColorHint="@color/editTextHintColor" />
+                <!--<EditText-->
+                    <!--android:id="@+id/edtRegisterUDescription"-->
+                    <!--style="@style/editTextBox"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="122dp"-->
+
+                    <!--android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "-->
+                    <!--android:ems="10"-->
+                    <!--android:hint="@string/profile_description"-->
+                    <!--android:gravity="start|center"-->
+                    <!--android:inputType="textLongMessage"-->
+                    <!--android:scrollbars="vertical"-->
+                    <!--android:scrollHorizontally="false"-->
+                    <!--android:maxLength="50"-->
+
+                    <!--android:textColorHint="@color/editTextHintColor" />-->
+
+
+                <EditText
+                    android:id="@+id/edtRegisterUDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    style="@style/editTextBox"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:hint="@string/profile_description"
+                    android:maxLength="50"
+                    android:fontFamily="sans-serif-condensed"
+                    android:minLines="2"
+                    android:maxLines="3"
+                    android:scrollbars="vertical"
+                    android:inputType="textMultiLine"
+                    android:textColorHint="@color/editTextHintColor"
+                    />
+
+                <com.tradesman.provider.component.MyFontOpenRegEditText
+                    android:id="@+id/edtUpdateEmail"
+                    style="@style/editTextBox"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/email_icon"
+                    android:enabled="false"
+                    android:hint="@string/email_hint"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/editTextHintColor" />
+
+                <com.tradesman.provider.component.MyFontOpenRegEditText
+                    android:id="@+id/edtnewPass"
+                    style="@style/editTextBox"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/password_icon"
+                    android:hint="@string/password_hint"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/editTextHintColor" />
+
+
+                <com.tradesman.provider.component.MyFontOpenRegEditText
+                    android:id="@+id/edtUpdatePassword"
+                    style="@style/editTextBox"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/password_icon"
+                    android:hint="@string/confirm_password_hint"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/editTextHintColor" />
+
+                <com.tradesman.provider.component.MyFontOpenRegEditText
+                    android:id="@+id/edtaddressUpdate"
+                    android:drawableLeft="@drawable/address_icon"
+                    style="@style/editTextBox"
+                    android:textColorHint="@color/color_hint"
+                    android:hint="@string/address_hint"
+                    android:inputType="textNoSuggestions"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"/>
+
+
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/box_email"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtCountryCode"
+                        android:paddingRight="10dp"
+                        android:text="+223"
+                        android:textSize="17sp"
+                        android:paddingLeft="@dimen/padding_editext"
+                        android:drawablePadding="@dimen/padding_edtdrawable"
+                        android:drawableLeft="@drawable/contact_number"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+
+                        android:layout_margin="5dp"
+                        android:background="@color/color_decsriptipn"
+                        android:layout_width="2dp"
+                        android:layout_height="@dimen/view_sise"/>
+
+                    <com.tradesman.provider.component.MyFontOpenRegEditText
+                        android:id="@+id/edtRegisterConatctNo"
+                        android:paddingLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:maxLength="10"
+                        android:hint="@string/contact_no_hint"
+                        android:textColorHint="@color/color_hint"
+                        android:background="@color/whiteColor"
+                        android:layout_marginRight="1dp"
+                        android:inputType="phone" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <com.tradesman.provider.component.MyFontOpenRegButton
+            android:id="@+id/btnUpdateProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@drawable/custom_button_shape"
+            android:text="Update Profile"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/text_size_button" />
+
+    </LinearLayout>
+
+</LinearLayout>

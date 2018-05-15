@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.tradesman.provider.component.MyriadProRegButton
+        android:textColor="@color/whiteColor"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/load_more_padding"
+        android:id="@+id/btnLoadMore"
+        android:text="@string/load_more"
+        android:textSize="@dimen/load_more_text_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/active_job_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tradesman.provider.MyJobActivity"
+    tools:showIn="@layout/app_bar_map">
+
+    <include
+        layout="@layout/custom_tool_bar"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_myJob"
+        app:tabTextColor="@color/whiteColor"
+        app:tabSelectedTextColor="@color/whiteColor"
+        app:tabIndicatorHeight="0dp"
+
+        app:tabTextAppearance="@style/CustomTextStyle"
+        app:tabBackground="@drawable/tab_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_myJob"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

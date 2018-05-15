@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item
+            android:id="@+id/drawer_profile_update"
+            android:icon="@drawable/profile_icon_drawer"
+            android:title="@string/drawer_profile" />
+
+        <item android:id="@+id/view_quote_activity"
+            android:icon="@drawable/view_quote_icon"
+            android:title="View Quotes"/>
+
+        <item android:id="@+id/my_job"
+            android:icon="@drawable/job_icon"
+            android:title="@string/my_job"/>
+        <item
+            android:id="@+id/buy_tokens"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Buy Tokens" />
+
+        <item android:id="@+id/drawer_select_type_activity"
+            android:icon="@drawable/view_quote_icon"
+            android:title="Types"/>
+
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Share" />
+
+        <item android:id="@+id/help"
+            android:icon="@drawable/help"
+            android:title="Help"/>
+
+        <item
+            android:id="@+id/drawer_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="@string/drawer_log_out" />
+
+
+</menu>

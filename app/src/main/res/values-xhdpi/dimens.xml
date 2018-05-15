@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!--Register-->
+    <dimen name="register_txt_size">25sp</dimen>
+    <dimen name="register_padding">3dp</dimen>
+    <dimen name="view_sise">40dp</dimen>
+
+    <!-- Edittext dimen -->
+    <dimen name="padding_editext">15dp</dimen>
+
+    <dimen name="select_type_img_size">60dp</dimen>
+
+    <!-- Button component dimen -->
+    <dimen name="text_size_register_button">22sp</dimen>
+    <dimen name="text_size_button">22sp</dimen>
+
+    <!-- Login screen dimen -->
+    <dimen name="do_not_have_account_textsize">20sp</dimen>
+    <dimen name="forgot_password_text_size">15sp</dimen>
+
+    <!-- Rating star dimen-->
+    <dimen name="star_heights">23dp</dimen>
+
+    <!-- margin dimen -->
+    <dimen name="marging_bottom_10dp">10dp</dimen>
+    <dimen name="marging_top_8dp">8dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="margin_15dp">15dp</dimen>
+
+    <!-- Profile update screen -->
+    <dimen name="update_profile_header_height">190dp</dimen>
+    <dimen name="profile_update_circular_image_width">100dp</dimen>
+    <dimen name="profile_update_circular_image_height">100dp</dimen>
+    <dimen name="profile_update_name_size">24sp</dimen>
+    <dimen name="content_padding">20dp</dimen>
+    <dimen name="padding_5dp">5dp</dimen>
+    <dimen name="total_job_complete_size">15sp</dimen>
+
+    <!--avilable job list-->
+
+    <dimen name="margin_screen">15dp</dimen>
+    <dimen name="miles_digit_avilable_job">30sp</dimen>
+
+    <dimen name="miles_in_text">15sp</dimen>
+    <dimen name="avilable_job_margin_10">10dp</dimen>
+    <dimen name="job_title">20sp</dimen>
+    <dimen name="job_time">12sp</dimen>
+
+    <dimen name="available_job_type">15sp</dimen>
+    <dimen name="available_job_pin_padding_20">20dp</dimen>
+    <dimen name="available_job_address_size">16sp</dimen>
+    <dimen name="avilable_job_user_name">20sp</dimen>
+    <dimen name="provide_quote_button_size">22sp</dimen>
+
+    <!--Feedback -->
+    <dimen name="feed_back_rating">31dip</dimen>
+
+
+    <!--Given rating size-->
+    <dimen name="givenrating_size">17dip</dimen>
+</resources>

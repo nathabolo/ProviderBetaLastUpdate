@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+
+    android:orientation="vertical">
+
+    <com.tradesman.provider.component.MyFontRaidProRegTextView
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/country_code_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:background="@color/whiteColor"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:padding="10dp"
+            android:src="@android:drawable/ic_menu_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <com.tradesman.provider.component.MyFontOpenRegEditText
+            android:id="@+id/edtsearchCountry"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/whiteColor"
+            android:textSize="20sp"
+            android:hint="@string/country_code_dialog_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <View
+        android:background="@drawable/shado"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_country_code"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>

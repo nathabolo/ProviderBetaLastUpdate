@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:background="@color/whiteColor"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.tradesman.provider.component.MyFontOpenRegTextView
+            android:id="@+id/txtlogoutTitle"
+            android:textSize="@dimen/dialog_title_size"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <View
+
+            android:id="@+id/dialog_view"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_30"
+            android:layout_marginRight="@dimen/margin_30"
+            android:background="@color/editTextHintColor"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+        <com.tradesman.provider.component.MyFontOpenRegTextView
+            android:id="@+id/txt_logoutDialog_message"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textSize="@dimen/dialog_message_size"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.tradesman.provider.component.MyFontOpenRegButton
+                android:textAllCaps="true"
+                android:id="@+id/btn_logoutdialog_cancel"
+                android:textColor="@color/whiteColor"
+                android:layout_marginRight="1dp"
+
+                android:background="@color/colorPrimary"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <com.tradesman.provider.component.MyFontOpenRegButton
+                android:textAllCaps="true"
+                android:id="@+id/btn_logoutDialog_ok"
+                android:textColor="@color/whiteColor"
+
+                android:background="@color/colorPrimary"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

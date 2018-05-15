@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/availableLayout"
+          android:padding="@dimen/avilable_job_margin_10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgavilableJob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"/>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/avilable_job_margin_10"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <com.tradesman.provider.component.MyFontRaidProBoldTextView
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:id="@+id/txtJobTitle" />
+                <com.tradesman.provider.component.MyFontOpenRegTextView
+                    android:textSize="@dimen/job_time"
+                    android:textColor="@color/color_second_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtJobTime" />
+
+                <com.tradesman.provider.component.MyFontOpenRegTextView
+                    android:ellipsize="end"
+                    android:layout_marginTop="@dimen/margin_2"
+                    android:lines="2"
+                    android:textColor="@color/color_decsriptipn"
+                    android:textSize="@dimen/job_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtJobDescriptipn" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/avilable_job_margin_10"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.tradesman.provider.component.MyFontRaidProRegTextView
+                    android:id="@+id/txtJobMilesNumber"
+                    android:textSize="@dimen/miles_digit_avilable_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_black_shade_5c" />
+
+                <com.tradesman.provider.component.MyFontRaidProRegTextView
+                    android:textSize="@dimen/miles_in_text"
+                    android:textColor="@color/color_black_shade_activejob"
+                    android:id="@+id/txtjobMiles"
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/miles_away"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/devider"/>
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeactivejob"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_active_job"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+        <TextView
+            android:visibility="gone"
+            android:text="@string/no_dat_activeJob"
+            android:gravity="center"
+            android:textSize="@dimen/empty_text_size"
+            android:id="@+id/no_iteam_active_job"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/margin_20"
+    android:paddingRight="@dimen/margin_20"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        android:background="@mipmap/bkk"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_20">
+
+        <ImageView
+            android:id="@+id/imgCLosePopup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="@dimen/margin_15"
+            android:src="@drawable/close_popup" />
+
+        <com.tradesman.provider.component.MyFontRaidProRegTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="20dp"
+            android:drawableTop="@drawable/paper_icon"
+            android:text="Invoice"
+            android:textColor="@color/whiteColor"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/whiteColor"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:paddingLeft="15dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <com.tradesman.provider.component.MyFontOpenRegTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:text="Job Amount"/>
+
+                <com.tradesman.provider.component.MyFontOpenRegTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:text="Admin Price"/>
+
+                <com.tradesman.provider.component.MyFontOpenRegTextView
+                    android:layout_width="wrap_content"
+                    android:paddingTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="You Received"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingRight="15dp"
+                android:gravity="right"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.tradesman.provider.component.MyFontOpenRegTextView
+                    android:id="@+id/txtjobammount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp" />
+
+                <com.tradesman.provider.component.MyFontOpenRegTextView
+                    android:id="@+id/txtadminprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:text=""/>
+
+                <com.tradesman.provider.component.MyFontOpenRegTextView
+                    android:id="@+id/txtfinalammount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:text=""/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <com.tradesman.provider.component.MyFontOpenRegButton
+            android:id="@+id/btninvoice"
+            android:textAllCaps="false"
+            android:textSize="@dimen/submit_size"
+            android:textColor="@color/whiteColor"
+            android:text="@string/OK"
+            android:background="@color/colorPrimary"
+            android:paddingTop="@dimen/avilable_job_margin_10"
+            android:paddingBottom="@dimen/avilable_job_margin_10"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

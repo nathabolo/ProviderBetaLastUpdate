@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3342FF</color>
+    <color name="colorPrimaryDark">#19239C</color>
+    <color name="colorAccent">#3342FF</color>
+
+    <color name="color_green_dark">#19239C</color>
+    <color name="shade_blue">#3342FF</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="whiteColorDarkerShade">#f5f5f5</color>
+    <color name="splash_color">#3342FF</color>
+
+    <!-- Button Color-->
+    <color name="buttonBackgroundColor">#3342FF</color>
+
+    <color name="color_ligt_black">#585858</color>
+    <color name="color_second_title">#434343</color>
+    <color name="color_decsriptipn">#9c9c9c</color>
+
+    <!-- EditText hint clolor -->
+    <color name="colorWhite">#ffff</color>
+    <color name="color_white_lessOpacity">#c8ffffff</color>
+    <color name="white_shade">#f9f2f3</color>
+
+    <!--Available job List-->
+    <color name="color_list_0">#ffffff</color>
+    <color name="color_list_1">#f4f4f4</color>
+    
+    <!--Hint color-->
+    
+    <color name="color_hint">#cccccc</color>
+    <color name="editTextHintColor">#cccccc</color>
+
+    <!--App REPET COLOR-->
+    <color name="color_0">#19239C</color>
+    <color name="color_1">#3342FF</color>
+    <color name="color_2">#3342FF</color>
+    <color name="color_3">#B77A51</color>
+    <color name="color_4">#A15F9F</color>
+    <color name="color_5">#7772B7</color>
+    <color name="color_selected">#a0000000</color>
+
+    <!--Profile -->
+    <color name="color_black_shade">#9f9f9f</color>
+    
+    <!--Register Activity-->
+    <color name="color_reg_edt_hint">#8b8b8b</color>
+
+    <!--Profile Activity-->
+    <color name="color_black_shade_profile">#5b5b5b</color>
+
+    <!--Active job-->
+    <color name="color_black_shade_activejob">#6f6f6f</color>
+    <color name="color_black_shade_5c">#5c5c5c</color>
+
+    <color name="color_red">#3342FF</color>
+
+</resources>

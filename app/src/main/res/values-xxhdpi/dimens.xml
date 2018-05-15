@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Social button dimen -->
+    <dimen name="padding_left_social_button">60dp</dimen>
+    <dimen name="social_button_text_size">18sp</dimen>
+
+    <!--Register-->
+    <dimen name="register_txt_size">25sp</dimen>
+    <dimen name="register_padding">3dp</dimen>
+    <dimen name="view_sise">42dp</dimen>
+    <!-- Edittext dimen -->
+    <dimen name="padding_editext">15dp</dimen>
+
+    <!-- Button component dimen-->
+    <dimen name="text_size_register_button">22sp</dimen>
+    <dimen name="text_size_button">22sp</dimen>
+
+    <!--Signin screen dimen-->
+    <dimen name="do_not_have_account_textsize">20sp</dimen>
+    <dimen name="forgot_password_text_size">15sp</dimen>
+
+    <!-- Rating star dimen -->
+    <dimen name="star_heights">21dp</dimen>
+
+    <!-- Margin dimen -->
+    <dimen name="marging_bottom_10dp">10dp</dimen>
+    <dimen name="marging_top_8dp">8dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="margin_15dp">15dp</dimen>
+
+    <!--Select provider type-->
+
+    <dimen name="select_type_img_size">60dp</dimen>
+
+
+    <!-- Update profilr screen-->
+    <dimen name="update_profile_header_height">190dp</dimen>
+    <dimen name="profile_update_circular_image_width">100dp</dimen>
+    <dimen name="profile_update_circular_image_height">100dp</dimen>
+    <dimen name="profile_update_name_size">24sp</dimen>
+    <dimen name="content_padding">20dp</dimen>
+    <dimen name="padding_5dp">5dp</dimen>
+    <dimen name="total_job_complete_size">15sp</dimen>
+
+    <!--Custom Dialog -->
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="dialog_title_size">25sp</dimen>
+    <dimen name="dialog_message_size">16sp</dimen>
+    <dimen name="dialog_btn_size">20sp</dimen>
+
+
+    <!--avilable job list-->
+
+    <dimen name="margin_screen">15dp</dimen>
+    <dimen name="miles_digit_avilable_job">30sp</dimen>
+    <dimen name="miles_in_text">15sp</dimen>
+    <dimen name="avilable_job_margin_10">10dp</dimen>
+    <dimen name="job_title">20sp</dimen>
+    <dimen name="job_time">12sp</dimen>
+    <dimen name="available_job_margin_5">5dp</dimen>
+    <dimen name="available_job_type">15sp</dimen>
+    <dimen name="available_job_pin_padding_20">20dp</dimen>
+    <dimen name="available_job_address_size">16sp</dimen>
+    <dimen name="avilable_job_user_name">20sp</dimen>
+    <dimen name="provide_quote_button_size">22sp</dimen>
+    <dimen name="available_job_rating_size">27dp</dimen>
+    <dimen name="user_image_size">65dp</dimen>
+
+    <dimen name="rating_size">30dp</dimen>
+    <dimen name="avilablejob_padding_20">20dp</dimen>
+
+    <!--provide Quote Dialog-->
+    
+    <dimen name="provide_quote_size">22sp</dimen>
+    <dimen name="you_see_text">15sp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="ext_provide_quote">20sp</dimen>
+    <dimen name="submit_size">22sp</dimen>
+    <dimen name="screen_padding_50">50dp</dimen>
+    
+    <!--Active Job -->
+    <dimen name="active_job_username">19sp</dimen>
+    <dimen name="active_job_servicvename">19dp</dimen>
+    <dimen name="active_job_description">12sp</dimen>
+    <dimen name="active_job_rate">25sp</dimen>
+    <dimen name="active_job_time">12sp</dimen>
+    <dimen name="active_size">20sp</dimen>
+    <dimen name="tab_text_size">18sp</dimen>
+    <!--Statistics-->
+    <dimen name="available_service_text_size">17sp</dimen>
+    <dimen name="profile_btn_size">19sp</dimen>
+    <dimen name="profile_title_text">18sp</dimen>
+    <dimen name="profile_padding">10dp</dimen>
+    <dimen name="profile_margin">30sp</dimen>
+    <dimen name="profile_text_20">20sp</dimen>
+    <dimen name="profile_text_25">25sp</dimen>
+    <dimen name="profile_text_38">38sp</dimen>
+    <dimen name="profile_text_30">30sp</dimen>
+    <dimen name="profile_text_17">17sp</dimen>
+    <dimen name="profile_text_13">13sp</dimen>
+    <dimen name="profile_margin_2">2dp</dimen>
+    <dimen name="profile_margin_10">10dp</dimen>
+
+    <!--FeedBack-->
+
+    <dimen name="job_completed">35sp</dimen>
+    <dimen name="feed_back_rating">31dip</dimen>
+
+    <!--Given rating size-->
+    <dimen name="givenrating_size">18dip</dimen>
+
+    <!--Shaperater view height-->
+
+    <dimen name="shaprater_view_height">3dp</dimen>
+
+    <!--Load more data-->
+    <dimen name="load_more_padding">10dp</dimen>
+    <dimen name="load_more_text_size">22sp</dimen>
+    <dimen name="empty_text_size">25sp</dimen>
+</resources>

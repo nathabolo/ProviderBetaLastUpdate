@@ -1,0 +1,32 @@
+package com.tradesman.provider;
+
+import android.app.Activity;
+import android.app.Dialog;
+import android.graphics.drawable.ColorDrawable;
+import android.view.View;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import com.jimmiejobscreative.tradesman.provider.R;
+
+
+/**
+ * Created by jimmiejobscreative on 2018/04/20.
+ */
+
+public class Congrats {
+    public Dialog dialog;
+    public void showDialog(Activity activity, String msg) {
+
+        dialog = new Dialog(activity);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCancelable(false);
+        dialog.setContentView(R.layout.congrats);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+
+        dialog.show();
+
+    }
+}
